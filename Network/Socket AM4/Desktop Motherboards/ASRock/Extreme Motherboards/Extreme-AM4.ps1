@@ -3,7 +3,7 @@ $NICDrivers = @(
 )
 
 $DriverFileNames = @(
-    @{FileName = "ASRock Socket AM4 Extreme Motherboard Intel Ethernet Network Card Drivers - ASRock-Extreme-Intel-NetworkDrivers.zip"} 
+    @{FileName = "ASRock-Extreme-Intel-NetworkDrivers.zip"} 
 )
 
 Import-Module -Name OSD -Force
