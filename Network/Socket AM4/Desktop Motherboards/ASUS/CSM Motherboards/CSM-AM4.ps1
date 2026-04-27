@@ -9,7 +9,7 @@ $DriverFileNames = @(
 Import-Module -Name OSD -Force
 Import-Module -Name 7Zip4Powershell -Force
 
-$destination = "C:\download\drivers\Socket AM4\ASRock\Extreme\Ethernet"
+$destination = "C:\download\drivers\Socket AM4\ASUS\CSM\Ethernet"
 
 foreach($Driver in $NICDrivers){
     Write-Host "`nProcessing: $($Driver.Name)" -ForegroundColor Cyan
@@ -19,7 +19,7 @@ foreach($Driver in $NICDrivers){
 }
 
 foreach($FileItem in $DriverFileNames){
-    $expanddir = "C:\download\drivers\Socket AM4\ASRock\Extreme\Ethernet\extract"
+    $expanddir = "C:\download\drivers\Socket AM4\ASUS\CSM\Ethernet\extract"
     # Fixed: Changed $Driver.Name to $FileItem.FileName since $Driver is out of scope
     Write-Host "Processing: $($FileItem.FileName) extraction" -ForegroundColor Cyan
     Write-Host
