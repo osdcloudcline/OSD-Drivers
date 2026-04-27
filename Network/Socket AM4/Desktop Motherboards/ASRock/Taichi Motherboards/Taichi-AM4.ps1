@@ -1,5 +1,5 @@
 $NICDrivers = @ (
-@{Name = "ASRock Socket AM4 Taichi Motherboard Network Card Drivers"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/Taichi%20Motherboards/ASRock-Taichi-Intel-LANDrivers.zip"},
+@{Name = "ASRock Socket AM4 Taichi Motherboard Ethernet Network Card Drivers"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/Taichi%20Motherboards/ASRock-Taichi-Intel-LANDrivers.zip"}
 )
 
 Import-Module -Name OSD -Force
