@@ -6,6 +6,13 @@ $NICDrivers = @ (
 @{Name = "ASRock Socket AM4 Phantom Gaming Motherboard Ethernet Network Card Drivers 5"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/Phantom%20Gaming%20Motherboards/ASRock-PhantomGaming-Realtek-LANDrivers3.zip"}
 )
 
+$DriverFileNames = @(
+    @{FileName = "ASRock-PhantomGaming-Intel-LANDrivers1.zip"}, 
+    @{FileName = "ASRock-PhantomGaming-Intel-LANDrivers2.zip"},
+    @{FileName = "ASRock-PhantomGaming-Realtek-LANDriver1.zip"},
+    @{FileName = "ASRock-PhantomGaming-Realtek-LANDriver2.zip"},
+    @{FileName = "ASRock-PhantomGaming-Realtek-LANDrivers3.zip"}
+)
 Import-Module -Name OSD -Force
 
 foreach($Driver in $NICDrivers){
