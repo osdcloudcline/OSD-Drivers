@@ -14,5 +14,5 @@ foreach($Driver in $NICDrivers){
     # Note: Save-WebFile requires the OSD module to be installed/imported
     Save-WebFile -SourceUrL $($Driver.DriverFileURL) -DestinationDirectory $destination
     
-    Write-Host "Completed: $($Driver.Name) download`n" -ForegroundColor Green
+    Write-Host "Completed: $($Driver.Name) downloaded`n" -ForegroundColor Green
 }
