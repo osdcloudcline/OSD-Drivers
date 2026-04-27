@@ -3,7 +3,7 @@ $NICDrivers = @ (
 
 )
 
-foreach($DriverFileName in $NICDrivers){
+foreach($Driver in $NICDrivers){
 $destination = "C:\download\drivers\Socket AM4\ASRock\Extreme\Ethernet"
 Write-Host "`nProcessing: $($Driver.Name) -ForegroundColor Cyan
   Save-WebFile -SourceUrL $($Driver.DriverFileURL) -DestinationDirectory $destination
