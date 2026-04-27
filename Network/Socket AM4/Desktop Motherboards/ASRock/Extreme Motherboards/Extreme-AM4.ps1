@@ -10,7 +10,7 @@ foreach($Driver in $NICDrivers){
     
     # Added the missing closing double-quote after $($Driver.Name)
     Write-Host "`nProcessing: $($Driver.Name)" -ForegroundColor Cyan
-    
+    Write-Host
     # Note: Save-WebFile requires the OSD module to be installed/imported
     Save-WebFile -SourceUrL $($Driver.DriverFileURL) -DestinationDirectory $destination
     
