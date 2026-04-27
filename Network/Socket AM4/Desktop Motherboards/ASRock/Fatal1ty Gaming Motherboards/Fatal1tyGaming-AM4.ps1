@@ -6,8 +6,8 @@ $NICDrivers = @(
 
 
 $DriverFileNames = @(
-    @{FileName = "ASRock Socket AM4 Fatal1ty Gaming Motherboard Ethernet Network Card Drivers 1 - ASRock-Fatal1tyGaming-Realtek-LANDrivers1.zip"}, 
-    @{FileName = "ASRock Socket AM4 Fatal1ty Gaming Motherboard Ethernet Network Card Drivers 2 - ASRock-Fatal1tyGaming-Realtek-LANDrivers2.zip"}
+    @{FileName = "ASRock-Fatal1tyGaming-Realtek-LANDrivers1.zip"}, 
+    @{FileName = "ASRock-Fatal1tyGaming-Realtek-LANDrivers2.zip"}
 )
 
 Import-Module -Name OSD -Force 
