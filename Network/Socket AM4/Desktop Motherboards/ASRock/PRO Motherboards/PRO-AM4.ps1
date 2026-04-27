@@ -6,6 +6,14 @@ $NICDrivers = @ (
 @{Name = "ASRock Socket AM4 PRO Motherboard Ethernet Network Card Drivers 5"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/PRO%20Motherboards/ASRock-PRO-Realtek-LANDrivers4.zip"}
 )
 
+$DriverFileNames = @(
+    @{FileName = "ASRock-PRO-Intel-LANDrivers.zip"}, 
+    @{FileName = "ASRock-PRO-Realtek-LANDrivers1.zip"},
+    @{FileName = "ASRock-PRO-Realtek-LANDrivers2.zip"},
+    @{FileName = "ASRock-PRO-Realtek-LANDrivers3.zip"},
+    @{FileName = "ASRock-PRO-Realtek-LANDrivers4.zip"}
+)
+
 Import-Module -Name OSD -Force
 foreach($Driver in $NICDrivers){
 $destination = "C:\download\drivers\Socket AM4\ASRock\PRO\Ethernet"
