@@ -15,10 +15,6 @@ Import-Module -Name 7Zip4Powershell -Force
 
 foreach($Driver in $NICDrivers){
     $destination = "C:\download\drivers\Socket AM4\ASRock\Fatal1ty Gaming\Ethernet"
-    
-    # Ensure the directory exists before downloading
-    if (!(Test-Path $destination)) { New-Item -ItemType Directory -Path $destination -Force }
-
     Write-Host "`nProcessing: $($Driver.Name)" -ForegroundColor Cyan
     Write-Host
     # Use Save-WebFile (from OSD module) or Invoke-WebRequest
