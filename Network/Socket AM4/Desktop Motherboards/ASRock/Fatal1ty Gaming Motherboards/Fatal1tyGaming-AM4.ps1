@@ -29,7 +29,7 @@ foreach($FileItem in $DriverFileNames){
     $zipPath = Join-Path -Path $parentdir -ChildPath $FileItem.FileName
     
     # Extract to a subfolder named after the ZIP (prevents file mixing)
-    $extractPath = Join-Path -Path $parentdir -ChildPath ([System.IO.Path]::GetFileNameWithoutExtension($FileItem.FileName))
+    $extractPath = Join-Path -Path $parentdir -ChildPath ([System.IO.Path]::GetFileNameWithoutExtension($zipPath))
 
     if (Test-Path -Path $zipPath) {
         Write-Host "Processing: $($FileItem.FileName) extraction" -ForegroundColor Cyan
