@@ -13,9 +13,8 @@ foreach($Driver in $NICDrivers){
     if (!(Test-Path $destinationDir)) { New-Item -ItemType Directory -Path $destinationDir -Force }
 
     Write-Host "`nProcessing: $($Driver.Name)" -ForegroundColor Cyan
-    
+    Write-Host
     # Use Save-WebFile (from OSD module) or Invoke-WebRequest
-    Save-WebFile -SourceUrL $($Driver.DriverFileURL) -DestinationDirectory $destination
-    
+       Save-WebFile -SourceUrL $($Driver.DriverFileURL) -DestinationDirectory $destination
     Write-Host "Completed: $($Driver.Name) download`n" -ForegroundColor Green
 }
