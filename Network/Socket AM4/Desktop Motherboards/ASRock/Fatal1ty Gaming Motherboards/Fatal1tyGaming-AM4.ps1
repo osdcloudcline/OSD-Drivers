@@ -11,6 +11,7 @@ $DriverFileNames = @(
 )
 
 Import-Module -Name OSD -Force 
+Import-Module -Name 7Zip4Powershell -Force
 
 foreach($Driver in $NICDrivers){
     $destination = "C:\download\drivers\Socket AM4\ASRock\Fatal1ty Gaming\Ethernet"
