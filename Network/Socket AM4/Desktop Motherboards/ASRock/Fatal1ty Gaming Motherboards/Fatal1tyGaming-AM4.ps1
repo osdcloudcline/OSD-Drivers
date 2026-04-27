@@ -25,3 +25,27 @@ foreach($Driver in $NICDrivers){
        Save-WebFile -SourceUrL $($Driver.DriverFileURL) -DestinationDirectory $destination
     Write-Host "Completed: $($Driver.Name) download`n" -ForegroundColor Green
 }
+
+foreach($FileItem in $DriverFileNames){
+    $parentdir = "C:\download\drivers\Socket AM4\ASRock\Fatal1ty Gaming\Ethernet"
+    
+    # Construct the full path to the ZIP file
+    $zipPath = Join-Path -Path $parentdir -ChildPath $FileItem.FileName
+    
+    # Extract to a subfolder named after the ZIP (prevents file mixing)
+    $extractPath = Join-Path -Path $parentdir -ChildPath ([System.IO.Path]::GetFileNameWithoutExtension($FileItem.FileName))
+
+    if (Test-Path -Path $zipPath) {
+        Write-Host "Processing: $($FileItem.FileName) extraction" -ForegroundColor Cyan
+        
+        # Ensure extraction folder exists
+        if (!(Test-Path $extractPath)) { New-Item -ItemType Directory -Path $extractPath -Force | Out-Null }
+
+        # Extract using 7Zip4Powershell
+        Expand-7Zip -ArchiveFileName $zipPath -TargetPath $extractPath
+        
+        Write-Host "Completed: $($FileItem.FileName) extracted to $extractPath`n" -ForegroundColor Green
+    } else {
+        Write-Warning "File not found: $zipPath"
+    }
+}
