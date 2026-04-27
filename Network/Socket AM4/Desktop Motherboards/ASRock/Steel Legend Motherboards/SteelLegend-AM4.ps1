@@ -5,7 +5,15 @@ $NICDrivers = @ (
 @{Name = "ASRock Socket AM4 Steel Legend Motherboard Ethernet Network Card Drivers 4"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/Steel%20Legend%20Motherboards/ASRock-SteelLegend-Realtek-LANDrivers3.zip"}
 )
 
+$DriverFileNames = @(
+    @{FileName = "ASRock-SteelLegend-Intel-LANDrivers.zip"}, 
+    @{FileName = "ASRock-SteelLegend-Realtek-LANDrivers1.zip"},
+    @{FileName = "ASRock-SteelLegend-Realtek-LANDrivers2.zip"},
+    @{FileName = "ASRock-SteelLegend-Realtek-LANDrivers3.zip"}
+)
+
 Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
 
 foreach($Driver in $NICDrivers){
 $destination = "C:\download\drivers\Socket AM4\ASRock\Steel Legend\Ethernet"
