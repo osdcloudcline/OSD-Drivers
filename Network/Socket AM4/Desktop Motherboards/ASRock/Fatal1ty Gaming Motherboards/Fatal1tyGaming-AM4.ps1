@@ -1,6 +1,6 @@
 $NICDrivers = @ (
-{Name = "ASRock Fatal1ty Gaming Motherboard Network Card Drivers 1"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/Fatal1ty%20Gaming%20Motherboards/ASRock-Fatal1tyGaming-Realtek-LANDrivers1.zip"}
-{Name = "ASRock Fatal1ty Gaming Motherboard Network Card Drivers 2"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/Fatal1ty%20Gaming%20Motherboards/ASRock-Fatal1tyGaming-Realtek-LANDrivers2.zip"}
+{Name = "ASRock Socket AM4 Fatal1ty Gaming Motherboard Network Card Drivers 1"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/Fatal1ty%20Gaming%20Motherboards/ASRock-Fatal1tyGaming-Realtek-LANDrivers1.zip"}
+{Name = "ASRock Socket AM4 Fatal1ty Gaming Motherboard Network Card Drivers 2"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/Fatal1ty%20Gaming%20Motherboards/ASRock-Fatal1tyGaming-Realtek-LANDrivers2.zip"}
 )
 
 foreach($Driver in $NICDrivers){
