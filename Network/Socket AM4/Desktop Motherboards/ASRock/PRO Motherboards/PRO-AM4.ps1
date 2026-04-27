@@ -15,6 +15,8 @@ $DriverFileNames = @(
 )
 
 Import-Module -Name OSD -Force
+Import-Module -Name 7Zip4Powershell -Force
+
 foreach($Driver in $NICDrivers){
 $destination = "C:\download\drivers\Socket AM4\ASRock\PRO\Ethernet"
 Write-Host "`nProcessing: $($Driver.Name) -ForegroundColor Cyan
