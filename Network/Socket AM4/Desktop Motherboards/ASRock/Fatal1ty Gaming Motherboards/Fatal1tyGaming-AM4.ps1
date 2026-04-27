@@ -34,9 +34,6 @@ foreach($FileItem in $DriverFileNames){
     if (Test-Path -Path $zipPath) {
         Write-Host "Processing: $($FileItem.FileName) extraction" -ForegroundColor Cyan
         
-        # Ensure extraction folder exists
-        if (!(Test-Path $extractPath)) { New-Item -ItemType Directory -Path $extractPath -Force | Out-Null }
-
         # Extract using 7Zip4Powershell
         Expand-7Zip -ArchiveFileName $zipPath -TargetPath $extractPath
         
