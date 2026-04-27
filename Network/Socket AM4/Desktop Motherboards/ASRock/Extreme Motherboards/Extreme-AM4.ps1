@@ -1,5 +1,5 @@
 $NICDrivers = @ (
-{Name = "ASRock Extreme Motherboard Intel Network Card Drivers"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/Extreme%20Motherboards/ASRock-Extreme-Intel-NetworkDrivers.zip"}
+{Name = "ASRock Socket AM4 Extreme Motherboard Intel Network Card Drivers"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/ASRock/Extreme%20Motherboards/ASRock-Extreme-Intel-NetworkDrivers.zip"}
 
 )
 
