@@ -22,3 +22,24 @@ Write-Host
   Save-WebFile -SourceUrL $($Driver.DriverFileURL) -DestinationDirectory $destination
 Write-Host "Completed: $($Driver.Name) downloaded`n" -ForegroundColor Green
 }
+
+foreach($FileItem in $DriverFileNames){
+    $parentdir = "C:\download\drivers\Socket AM4\ASRock\Steel Legend\Ethernet"
+    
+    # Construct the full path to the ZIP file
+    $zipPath = Join-Path -Path $parentdir -ChildPath $FileItem.FileName
+    
+    # Extract to a subfolder named after the ZIP (prevents file mixing)
+    $extractPath = Join-Path -Path $parentdir -ChildPath ([System.IO.Path]::GetFileNameWithoutExtension($zipPath))
+
+    if (Test-Path -Path $zipPath) {
+        Write-Host "Processing: $($FileItem.FileName) extraction" -ForegroundColor Cyan
+        
+        # Extract using 7Zip4Powershell
+        Expand-7Zip -ArchiveFileName $zipPath -TargetPath $extractPath
+        
+        Write-Host "Completed: $($FileItem.FileName) extracted to $extractPath`n" -ForegroundColor Green
+    } else {
+        Write-Warning "File not found: $zipPath"
+    }
+}
