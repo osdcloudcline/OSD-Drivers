@@ -13,6 +13,7 @@ $destination = "C:\download\drivers\Socket AM4\ASRock\Extreme\Ethernet"
 
 foreach($Driver in $NICDrivers){
     Write-Host "`nProcessing: $($Driver.Name)" -ForegroundColor Cyan
+    Write-Host
     Save-WebFile -SourceUrL $($Driver.DriverFileURL) -DestinationDirectory $destination
     Write-Host "Completed: $($Driver.Name) downloaded`n" -ForegroundColor Green
 }
@@ -21,7 +22,7 @@ foreach($FileItem in $DriverFileNames){
     $expanddir = "C:\download\drivers\Socket AM4\ASRock\Extreme\Ethernet\extract"
     # Fixed: Changed $Driver.Name to $FileItem.FileName since $Driver is out of scope
     Write-Host "Processing: $($FileItem.FileName) extraction" -ForegroundColor Cyan
-    
+    Write-Host
     Expand-7Zip -ArchiveFileName "$destination\$($FileItem.FileName)" -TargetPath $expanddir
     Write-Host "Completed: $($FileItem.FileName) extracted`n" -ForegroundColor Green
 }
