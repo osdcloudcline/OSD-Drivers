@@ -7,7 +7,7 @@ $NICDrivers = @(
 Import-Module -Name OSD -Force 
 
 foreach($Driver in $NICDrivers){
-    $destinationDir = "C:\download\drivers\Socket AM4\ASRock\Fatal1ty Gaming\Ethernet"
+    $destination = "C:\download\drivers\Socket AM4\ASRock\Fatal1ty Gaming\Ethernet"
     
     # Ensure the directory exists before downloading
     if (!(Test-Path $destinationDir)) { New-Item -ItemType Directory -Path $destinationDir -Force }
@@ -15,10 +15,7 @@ foreach($Driver in $NICDrivers){
     Write-Host "`nProcessing: $($Driver.Name)" -ForegroundColor Cyan
     
     # Use Save-WebFile (from OSD module) or Invoke-WebRequest
-    $fileName = Split-Path $Driver.DriverFileURL -Leaf
-    $destFile = Join-Path $destinationDir $fileName
-    
-    Invoke-WebRequest -Uri $Driver.DriverFileURL -OutFile $destFile
+    Save-WebFile -SourceUrL $($Driver.DriverFileURL) -DestinationDirectory $destination
     
     Write-Host "Completed: $($Driver.Name) download`n" -ForegroundColor Green
 }
