@@ -3,7 +3,7 @@ $NICDrivers = @ (
 )
 
 $DriverFileNames = @(
-    @{FileName = "ASRock Socket AM4 Taichi Motherboard Intel Ethernet Network Card Drivers - ASRock-Taichi-Intel-LANDrivers.zip"} 
+    @{FileName = "ASRock-Taichi-Intel-LANDrivers.zip"} 
 )
 
 Import-Module -Name OSD -Force
