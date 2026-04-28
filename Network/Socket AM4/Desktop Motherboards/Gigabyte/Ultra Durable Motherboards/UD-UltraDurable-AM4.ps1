@@ -16,7 +16,7 @@ $NICDrivers = @(
     @{Name = "Gigabyte Socket AM4 Ultra Durable Motherboard Ethernet Network Card Drivers 14 - X470"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/Gigabyte/Ultra Durable%20Motherboards/Gigabyte-Ultra Durable-Ethernet-X470Drivers-Intel-PRO1000.zip"},
     @{Name = "Gigabyte Socket AM4 Ultra Durable Motherboard Ethernet Network Card Drivers 15 - X470"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/Gigabyte/Ultra Durable%20Motherboards/Gigabyte-Ultra Durable-Ethernet-X470Drivers-Intel-PRO40GB.zip"},
     @{Name = "Gigabyte Socket AM4 Ultra Durable Motherboard Ethernet Network Card Drivers 16 - X470"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/Gigabyte/Ultra Durable%20Motherboards/Gigabyte-Ultra Durable-Ethernet-X470Drivers-Intel-PROXGB.zip"},
-    @{Name = "Gigabyte Socket AM4 Ultra Durable Motherboard Ethernet Network Card Drivers 17 - X570"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/Gigabyte/Ultra Durable%20Motherboards/Gigabyte-Ultra Durable-Ethernet-X570Drivers-AQNIC.zip"},
+    @{Name = "Gigabyte Socket AM4 Ultra Durable Motherboard Ethernet Network Card Drivers 17 - X570"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM4/Desktop%20Motherboards/Gigabyte/Ultra Durable%20Motherboards/Gigabyte-Ultra Durable-Ethernet-X570Drivers-AQNIC.zip"}
     
 )
 
@@ -38,7 +38,7 @@ $DriverFileNames = @(
     @{FileName = "Gigabyte-Ultra Durable-Ethernet-X470Drivers-Intel-PRO1000.zipp"},
     @{FileName = "Gigabyte-Ultra Durable-Ethernet-X470Drivers-Intel-PRO40GB.zip"},
     @{FileName = "Gigabyte-Ultra Durable-Ethernet-X470Drivers-Intel-PROXGB.zip"}, 
-    @{FileName = "Gigabyte-Ultra Durable-Ethernet-X570Drivers-AQNIC.zip"},
+    @{FileName = "Gigabyte-Ultra Durable-Ethernet-X570Drivers-AQNIC.zip"}
 
 )
 
