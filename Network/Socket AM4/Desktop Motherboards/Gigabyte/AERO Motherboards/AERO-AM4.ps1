@@ -3,7 +3,7 @@ $NICDrivers = @(
 )
 
 $DriverFileNames = @(
-    @{FileName = "Workstation-Realtek-LANDrivers.zip"} 
+    @{FileName = "Gigabyte-AERO-LANDrivers.zip"} 
 )
 
 Import-Module -Name OSD -Force
