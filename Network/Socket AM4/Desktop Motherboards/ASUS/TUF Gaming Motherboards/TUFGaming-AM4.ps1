@@ -10,7 +10,7 @@ $NICDrivers = @(
 
 $DriverFileNames = @(
     @{FileName = "TUFGaming-Intel-I255-I226-LANDrivers.zip"}, 
-    @{FileName = "TUFGaming-Realtek1-LANDrivers.zipp"},
+    @{FileName = "TUFGaming-Realtek1-LANDrivers.zip"},
     @{FileName = "TUFGaming-Realtek2-LANDrivers.zip"},
     @{FileName = "TUFGaming-Realtek3-LANDrivers.zip"},
 )
