@@ -1,6 +1,6 @@
 $NICDrivers = @(
-    @{Name = "Gigabyte Socket AM5 AI TOP Motherboard Intel Ethernet Network Card Drivers"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM5/Gigabyte/AI%20TOP%20Motherboards/Gigabyte-AM5-AI-TOP-EthernetDrivers-Windows10.zip"},
-    @{Name = "Gigabyte Socket AM5 AI TOP Motherboard Intel Ethernet Network Card Drivers"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM5/Gigabyte/AI%20TOP%20Motherboards/Gigabyte-AM5-AI-TOP-EthernetDrivers-Windows11.zip"}
+    @{Name = "Gigabyte Socket AM5 AI TOP Motherboard Intel Ethernet Network Card Drivers 1"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM5/Gigabyte/AI%20TOP%20Motherboards/Gigabyte-AM5-AI-TOP-EthernetDrivers-Windows10.zip"},
+    @{Name = "Gigabyte Socket AM5 AI TOP Motherboard Intel Ethernet Network Card Drivers 2"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20AM5/Gigabyte/AI%20TOP%20Motherboards/Gigabyte-AM5-AI-TOP-EthernetDrivers-Windows11.zip"}
 )
 
 $DriverFileNames = @(
