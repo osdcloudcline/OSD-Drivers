@@ -7,7 +7,7 @@ $NICDrivers = @(
 
 
 $DriverFileNames = @(
-    @{FileName = "PRIME-Intel-i211-LANDrivers.zip.zip"}, 
+    @{FileName = "PRIME-Intel-i211-LANDrivers.zip"}, 
     @{FileName = "PRIME-Realtek-LANDrivers.zip"},
     @{FileName = "PRIME-Realtek-LANDrivers2.zip"}
 )
