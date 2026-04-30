@@ -21,3 +21,19 @@ foreach ($App in $IntelChipsets) {
         Write-Host "Failed: $($App.Name) installation (Exit Code: $LASTEXITCODE)" -ForegroundColor Red
     }
 }
+
+Import-Module -Name OSD -Force
+
+$IntelChipsetDownloads = @(
+ @{Name = "Intel Chipset Setup Utility"; FileDownloadURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Chipset/Intel/SetupChipset.exe"}
+ )
+ 
+
+$destination = "C:\download\drivers\CPU\Intel"
+
+foreach($FileItem in $IntelChipsetDownloads){
+    Write-Host "`nProcessing: $($FileItem.Name)" -ForegroundColor Cyan
+    Write-Host
+    Save-WebFile -SourceUrL $($FileItem.FileDownloadURL) -DestinationDirectory $destination
+    Write-Host "Completed: $($FileItem.Name) downloaded`n" -ForegroundColor Green
+}
