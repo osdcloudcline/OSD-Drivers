@@ -10,4 +10,5 @@ foreach ($App in $AMDChipsets) {
     Write-Host
     choco install --id $($App.ID) -y
     Write-Host
+    Write-Host "Completed: $($App.Name) install" -ForegroundColor Green
 }
