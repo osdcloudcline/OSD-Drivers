@@ -1,6 +1,6 @@
 $NICDrivers = @(
-    @{Name = "ASRock Socket LGA 1700 AQUA Motherboard Ethernet Network Card Drivers"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20LGA1700/ASRock/AQUA%20Motherboards/ASRock-LGA1700-AQUA-EthernetDrivers1.zip"},
-    @{Name = "ASRock Socket LGA 1700 AQUA Motherboard Ethernet Network Card Drivers"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20LGA1700/ASRock/AQUA%20Motherboards/ASRock-LGA1700-AQUA-EthernetDrivers2.zip"}
+    @{Name = "ASRock Socket LGA 1700 AQUA Motherboard Ethernet Network Card Drivers 1"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20LGA1700/ASRock/AQUA%20Motherboards/ASRock-LGA1700-AQUA-EthernetDrivers1.zip"},
+    @{Name = "ASRock Socket LGA 1700 AQUA Motherboard Ethernet Network Card Drivers 2"; DriverFileURL = "https://github.com/osdcloudcline/OSD-Drivers/raw/refs/heads/main/Network/Socket%20LGA1700/ASRock/AQUA%20Motherboards/ASRock-LGA1700-AQUA-EthernetDrivers2.zip"}
 )
 
 $DriverFileNames = @(
